@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>color flipper</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div>
-      <h1>collor flipper</h1>
-      <p>saya ingin belajar tombol mengganti warna</p>
-      <button id="biru" onclick="setColor('blue')">biru</button>
-      <button id="kuning" onclick="setColor('yellow')">kuning</button>
-      <button id="hijau" onclick="setColor('green')">hijau</button>
-      <button id="random" onclick="randomCollor()">hijau</button>
-
-      <script src="script.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Color Flipper</title>
+</head>
+<body>
+    <div class="container">
+      <h1>Color Flipper</h1>
+      <p>Mengubah warna background-color</p>
+      <button onclick="setColor('red')" style="background-color: red;">Merah</button>
+      <button onclick="setColor('yellow')" style="background-color: yellow;">Kuning</button>
+      <button onclick="setColor('green')" style="background-color: green;">Hijau</button>
+      <button onclick="randomColor()" style="background-color: gray;">Random</button>
     </div>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
