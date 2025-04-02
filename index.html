@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website dengan Multiple Container</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Global Container */
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Header */
+        .header {
+            background: #333;
+            color: white;
+            padding: 15px 0;
+        }
+        .nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+        /* Banner */
+        .banner {
+            background: url('https://source.unsplash.com/1200x400/?business') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 28px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+        /* Section Styling */
+        .section {
+            padding: 50px 0;
+        }
+        .features {
+            background: #f4f4f4;
+        }
+        .gallery {
+            background: #ddd;
+        }
+        .faq {
+            background: #eee;
+        }
+        .contact {
+            background: #ccc;
+        }
+        /* Footer */
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container">
+            <h1>Selamat Datang di Website Kami</h1>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features">
+        <div class="container">
+            <h2>Fitur Kami</h2>
+            <p>Deskripsi fitur utama website.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery">
+        <div class="container">
+            <h2>Galeri</h2>
+            <p>Koleksi gambar atau proyek terbaru.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq">
+        <div class="container">
+            <h2>FAQ</h2>
+            <p>Pertanyaan yang sering diajukan.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <p>Formulir kontak untuk menghubungi kami.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
